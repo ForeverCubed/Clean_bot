@@ -3,5 +3,15 @@
       "name":"test",
       "call":"!ping",
       "path":"./commands/test.js"
+    },
+    {
+      "name":"addquote",
+      "call":"!addquote",
+      "path":"./commands/addQ.js"
+    },
+    {
+      "name":"delquote",
+      "call":"!delquote",
+      "path":"./commands/delQ.js"
     }
 ]

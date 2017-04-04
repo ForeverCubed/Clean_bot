@@ -4,11 +4,23 @@
 			"name": "ForeverCubed",
 			"discriminator": "0697",
 			"id": "120806137816678402",
-			"exp": 21,
+			"exp": 270,
+			"level": 2,
+			"money": 0,
+			"totalexp": 520,
+			"lastmsg": 1491346116468
+		}
+	},
+	"263557021893132289": {
+		"120806137816678402": {
+			"name": "ForeverCubed",
+			"discriminator": "0697",
+			"id": "120806137816678402",
+			"exp": 11,
 			"level": 1,
 			"money": 0,
-			"totalexp": 21,
-			"lastmsg": 1491339136932
+			"totalexp": 11,
+			"lastmsg": 1491345933884
 		}
 	}
 }

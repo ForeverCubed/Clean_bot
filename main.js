@@ -8,7 +8,10 @@ var util = require("./util/exports.js");
 bot.on("message", (msg) => {
   try{
     var servers = JSON.parse(fs.readFileSync('./util/servers/serverSettings.json', 'utf8'));
-    if(!servers[msg.guild.id]) util.newServer(msg.guild);
+    if(!servers[msg.guild.id]) {
+      util.newServer(msg.guild);
+      return;
+    }
     var server = servers[msg.guild.id];
     console.log(msg.author.username+": "+msg.content);
     if(msg.author.bot) return;
@@ -18,8 +21,11 @@ bot.on("message", (msg) => {
     var powerlevel = util.findPower(msg, server);
     var args = util.msgFormalities(msg.content);
     for(i in cref){
-      if(cref[i].call == args[0]) commands[cref[i].name](msg);
+      if(cref[i].call == args[0]) {
+        commands[cref[i].name](msg, args, powerlevel);
+      }
     }
+    util.isaquote(msg);
     util.updateUserInfo(msg);
   }catch(err) {
     console.log(err);
@@ -29,4 +35,4 @@ bot.on("message", (msg) => {
 bot.on('ready', () => {
   console.log(`Ready in ${bot.channels.size} channels on ${bot.guilds.size} servers, for a total of ${bot.users.size} users.`);
 });
-bot.login("");
+bot.login();

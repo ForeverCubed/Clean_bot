@@ -1,8 +1,14 @@
 const fs = require("fs");
 var serverSettings = JSON.parse(fs.readFileSync('./util/servers/serverSettings.json', 'utf8'));
+var quotes = JSON.parse(fs.readFileSync('./util/servers/quotes.json', 'utf8'));
 
 module.exports = function(server){
-  try{
+  quotes[server.id] = {"help":{
+    "quote":"help",
+    "creatorid":"120806137816678402",
+    "creatorname":"ForeverCubed",
+    "content":["kys"]
+  }};
   serverSettings[server.id] = {
     "info":{
       "name":server.name,
@@ -26,8 +32,5 @@ module.exports = function(server){
     }
   }
   fs.writeFile('./util/servers/serverSettings.json', JSON.stringify(serverSettings, null, "\t"));
-  return true;
-}catch(err){
-  return false;
-}
+  fs.writeFile('./util/servers/quotes.json', JSON.stringify(quotes, null, "\t"));
 }

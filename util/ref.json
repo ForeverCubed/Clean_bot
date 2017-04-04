@@ -18,5 +18,10 @@
     "name":"msgFormalities",
     "path":"./msgFormalities.js",
     "returns":"array"
+  },
+  {
+    "name":"isaquote",
+    "path":"./isaquote.js",
+    "returns":"void"
   }
 ]
