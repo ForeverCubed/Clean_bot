@@ -1,0 +1,22 @@
+[
+  {
+    "name":"newServer",
+    "path":"./servers/newServer.js",
+    "returns":"boolean"
+  },
+  {
+    "name":"findPower",
+    "path":"./findPower.js",
+    "returns":"int"
+  },
+  {
+    "name":"updateUserInfo",
+    "path":"./servers/updateUserInfo.js",
+    "returns":"boolean"
+  },
+  {
+    "name":"msgFormalities",
+    "path":"./msgFormalities.js",
+    "returns":"array"
+  }
+]

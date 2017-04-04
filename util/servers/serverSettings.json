@@ -1,0 +1,46 @@
+{
+	"258426944230653952": {
+		"info": {
+			"name": "aa",
+			"id": "258426944230653952"
+		},
+		"score_time": 2,
+		"admin": "admin",
+		"member": "member",
+		"xpScale": 250,
+		"console": true,
+		"debug": false,
+		"money": {
+			"freq": 30,
+			"onChannel": "",
+			"onScreen": false,
+			"lastMsg": 0,
+			"spamCheck": {
+				"count": 0,
+				"userid": ""
+			}
+		}
+	},
+	"263557021893132289": {
+		"info": {
+			"name": "Twomino",
+			"id": "263557021893132289"
+		},
+		"score_time": 2,
+		"admin": "admin",
+		"member": "member",
+		"xpScale": 250,
+		"console": true,
+		"debug": false,
+		"money": {
+			"freq": 30,
+			"onChannel": "",
+			"onScreen": false,
+			"lastMsg": 0,
+			"spamCheck": {
+				"count": 0,
+				"userid": ""
+			}
+		}
+	}
+}

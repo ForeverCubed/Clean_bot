@@ -1,0 +1,7 @@
+[
+    {
+      "name":"test",
+      "call":"!ping",
+      "path":"./commands/test.js"
+    }
+]
