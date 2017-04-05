@@ -1,3 +1,3 @@
-module.exports = function(msg, args, powerlevel, server){
+module.exports = function(omsg, args, powerlevel, server){
 
 }

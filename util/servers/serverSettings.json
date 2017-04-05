@@ -1,9 +1,7 @@
 {
 	"263557021893132289": {
-		"info": {
-			"name": "Twomino",
-			"id": "263557021893132289"
-		},
+		"name": "Twomino",
+		"id": "263557021893132289",
 		"score_time": 2,
 		"admin": "Admin",
 		"member": "the bois",
@@ -12,20 +10,18 @@
 		"debug": false,
 		"money": {
 			"freq": 30,
-			"onChannel": "",
+			"onChannel": "263557021893132289",
 			"onScreen": false,
-			"lastMsg": 0,
+			"lastMsg": 1491390457008,
 			"spamCheck": {
 				"count": 0,
-				"userid": ""
+				"id": "120806137816678402"
 			}
 		}
 	},
 	"258426944230653952": {
-		"info": {
-			"name": "aa",
-			"id": "258426944230653952"
-		},
+		"name": "aa",
+		"id": "258426944230653952",
 		"score_time": 2,
 		"admin": "admin",
 		"member": "member",
@@ -33,13 +29,13 @@
 		"console": true,
 		"debug": false,
 		"money": {
-			"freq": 30,
-			"onChannel": "",
+			"freq": 1,
+			"onChannel": "284649606657212417",
 			"onScreen": false,
-			"lastMsg": 0,
+			"lastMsg": 1491353919379,
 			"spamCheck": {
-				"count": 0,
-				"userid": ""
+				"count": 1,
+				"id": "120806137816678402"
 			}
 		}
 	}

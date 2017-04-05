@@ -10,10 +10,8 @@ module.exports = function(server){
     "content":["kys"]
   }};
   serverSettings[server.id] = {
-    "info":{
-      "name":server.name,
-      "id":server.id
-    },
+    "name":server.name,
+    "id":server.id,
     "score_time":2,
     "admin":"admin",
     "member":"member",

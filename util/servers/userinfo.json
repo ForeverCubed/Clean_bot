@@ -4,11 +4,12 @@
 			"name": "ForeverCubed",
 			"discriminator": "0697",
 			"id": "120806137816678402",
-			"exp": 31,
-			"level": 1,
-			"money": 0,
-			"totalexp": 31,
-			"lastmsg": 1491348284438
+			"exp": 18,
+			"level": 2,
+			"money": 20,
+			"totalexp": 268,
+			"lastmsg": 1491353919379,
+			"noods": null
 		},
 		"212398754538455042": {
 			"name": "LamazeP",
@@ -19,6 +20,70 @@
 			"money": 0,
 			"totalexp": 11,
 			"lastmsg": 1491348339407
+		}
+	},
+	"263557021893132289": {
+		"120806137816678402": {
+			"name": "ForeverCubed",
+			"discriminator": "0697",
+			"id": "120806137816678402",
+			"exp": 174,
+			"level": 1,
+			"money": 12,
+			"totalexp": 174,
+			"lastmsg": 1491390457008
+		},
+		"260956035773235200": {
+			"name": "Murta",
+			"discriminator": "9078",
+			"id": "260956035773235200",
+			"exp": 74,
+			"level": 1,
+			"money": 0,
+			"totalexp": 74,
+			"lastmsg": 1491354993496
+		},
+		"239422650139541506": {
+			"name": "gogogagdetorgasm",
+			"discriminator": "2286",
+			"id": "239422650139541506",
+			"exp": 106,
+			"level": 1,
+			"money": 0,
+			"totalexp": 106,
+			"lastmsg": 1491390415356
+		},
+		"158532073198583808": {
+			"name": "由乃",
+			"discriminator": "5107",
+			"id": "158532073198583808",
+			"exp": 15,
+			"level": 1,
+			"money": 0,
+			"totalexp": 15,
+			"lastmsg": 1491373413043
+		}
+	},
+	"[object Object]": {
+		"120806137816678402": {
+			"name": "ForeverCubed",
+			"discriminator": "0697",
+			"id": "120806137816678402",
+			"exp": 80,
+			"level": 1,
+			"money": 12,
+			"totalexp": 80,
+			"lastmsg": 1491354974892
+		},
+		"260956035773235200": {
+			"name": "Murta",
+			"discriminator": "9078",
+			"id": "260956035773235200",
+			"exp": 55,
+			"level": 1,
+			"money": 0,
+			"totalexp": 55,
+			"lastmsg": 1491354966714
 		}
 	}
 }

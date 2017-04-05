@@ -5,6 +5,31 @@
       "path":"./commands/test.js"
     },
     {
+      "name":"flip",
+      "call":"!flip",
+      "path":"./commands/gambling/flip.js"
+    },
+    {
+      "name":"roll",
+      "call":"!roll",
+      "path":"./commands/gambling/roll.js"
+    },
+    {
+      "name":"slots",
+      "call":"!slots",
+      "path":"./commands/gambling/slots.js"
+    },
+    {
+      "name":"showMoney",
+      "call":"$$$",
+      "path":"./commands/showMoney.js"
+    },
+    {
+      "name":"grab",
+      "call":"!grab",
+      "path":"./commands/grab.js"
+    },
+    {
       "name":"addquote",
       "call":"..",
       "path":"./commands/addQ.js"
@@ -13,6 +38,11 @@
       "name":"delquote",
       "call":"!delquote",
       "path":"./commands/delQ.js"
+    },
+    {
+      "name":"clr",
+      "call":"!clr",
+      "path":"./commands/clr.js"
     },
     {
       "name":"level",

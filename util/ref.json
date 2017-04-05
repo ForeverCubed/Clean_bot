@@ -5,6 +5,11 @@
     "returns":"boolean"
   },
   {
+    "name":"check",
+    "path":"./cashsys/check.js",
+    "returns":"void"
+  },
+  {
     "name":"findPower",
     "path":"./findPower.js",
     "returns":"int"
@@ -22,6 +27,6 @@
   {
     "name":"isaquote",
     "path":"./isaquote.js",
-    "returns":"void"
+    "returns":"boolean"
   }
 ]

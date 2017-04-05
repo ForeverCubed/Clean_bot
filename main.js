@@ -27,7 +27,8 @@ bot.on("message", (msg) => {
         return;
       }
     }
-    util.isaquote(msg);
+    if(util.isaquote(msg)) return;
+    util.check(msg, args, powerlevel, servers);
     util.updateUserInfo(msg);
   }catch(err) {
     console.log(err);
