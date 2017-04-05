@@ -4,23 +4,21 @@
 			"name": "ForeverCubed",
 			"discriminator": "0697",
 			"id": "120806137816678402",
-			"exp": 270,
-			"level": 2,
+			"exp": 31,
+			"level": 1,
 			"money": 0,
-			"totalexp": 520,
-			"lastmsg": 1491346116468
-		}
-	},
-	"263557021893132289": {
-		"120806137816678402": {
-			"name": "ForeverCubed",
-			"discriminator": "0697",
-			"id": "120806137816678402",
+			"totalexp": 31,
+			"lastmsg": 1491348284438
+		},
+		"212398754538455042": {
+			"name": "LamazeP",
+			"discriminator": "2321",
+			"id": "212398754538455042",
 			"exp": 11,
 			"level": 1,
 			"money": 0,
 			"totalexp": 11,
-			"lastmsg": 1491345933884
+			"lastmsg": 1491348339407
 		}
 	}
 }

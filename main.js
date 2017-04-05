@@ -17,12 +17,14 @@ bot.on("message", (msg) => {
     if(msg.author.bot) return;
     if(msg.content.startsWith("<@!258426554739064833>") || msg.content.startsWith("<@258426554739064833>")){
       msg.reply("https://puu.sh/v9j17/818ec2992f.png");
+      return;
     }
     var powerlevel = util.findPower(msg, server);
     var args = util.msgFormalities(msg.content);
     for(i in cref){
       if(cref[i].call == args[0]) {
-        commands[cref[i].name](msg, args, powerlevel);
+        commands[cref[i].name](msg, args, powerlevel, server);
+        return;
       }
     }
     util.isaquote(msg);

@@ -1,12 +1,12 @@
 {
-	"258426944230653952": {
+	"263557021893132289": {
 		"info": {
-			"name": "aa",
-			"id": "258426944230653952"
+			"name": "Twomino",
+			"id": "263557021893132289"
 		},
 		"score_time": 2,
-		"admin": "admin",
-		"member": "member",
+		"admin": "Admin",
+		"member": "the bois",
 		"xpScale": 250,
 		"console": true,
 		"debug": false,
@@ -21,10 +21,10 @@
 			}
 		}
 	},
-	"263557021893132289": {
+	"258426944230653952": {
 		"info": {
-			"name": "Twomino",
-			"id": "263557021893132289"
+			"name": "aa",
+			"id": "258426944230653952"
 		},
 		"score_time": 2,
 		"admin": "admin",

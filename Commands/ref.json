@@ -6,12 +6,17 @@
     },
     {
       "name":"addquote",
-      "call":"!addquote",
+      "call":"..",
       "path":"./commands/addQ.js"
     },
     {
       "name":"delquote",
       "call":"!delquote",
       "path":"./commands/delQ.js"
+    },
+    {
+      "name":"level",
+      "call":"!level",
+      "path":"./commands/level.js"
     }
 ]

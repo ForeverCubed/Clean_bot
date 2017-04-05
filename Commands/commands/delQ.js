@@ -1,5 +1,5 @@
 const fs = require("fs");
-module.exports = function(omsg, args, powerlevel){
+module.exports = function(omsg, args, powerlevel, server){
   var allquotes = JSON.parse(fs.readFileSync('./util/servers/quotes.json', 'utf8'));
   var quotes = allquotes[omsg.guild.id];
   if(!args[1] || !quotes[args[1]]){
@@ -18,7 +18,7 @@ module.exports = function(omsg, args, powerlevel){
     if(args[2] == "all" || quotes[args[1]].content.length == 1){
       delete quotes[args[1]];
       allquotes[omsg.guild.id] = quotes;
-      omsg.reply("!"+args[1]+" deleted!");
+      omsg.reply("... "+args[1]+" deleted!");
       fs.writeFile('./util/servers/quotes.json', JSON.stringify(allquotes, null, "\t"));
       return;
     }
