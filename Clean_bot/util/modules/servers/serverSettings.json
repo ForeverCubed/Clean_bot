@@ -1,0 +1,96 @@
+{
+	"props": [
+		"name",
+		"id",
+		"score_time",
+		"admin",
+		"member",
+		"xpScale",
+		"console",
+		"debug",
+		"money",
+		"freq"
+	],
+	"263557021893132289": {
+		"name": "Twomino",
+		"id": "263557021893132289",
+		"score_time": 2,
+		"admin": "Admin",
+		"member": "the bois",
+		"xpScale": 250,
+		"console": true,
+		"debug": [],
+		"freq": 30,
+		"money": {
+			"onChannel": "263557021893132289",
+			"onScreen": false,
+			"lastMsg": 1492006025422,
+			"spamCheck": {
+				"count": 0,
+				"id": "120806137816678402"
+			}
+		}
+	},
+	"258426944230653952": {
+		"name": "aa",
+		"id": "258426944230653952",
+		"score_time": 2,
+		"admin": "admin",
+		"member": "member",
+		"xpScale": 250,
+		"console": true,
+		"debug": [],
+		"freq": "0",
+		"money": {
+			"onChannel": "258426944230653952",
+			"onScreen": false,
+			"lastMsg": 1492005973580,
+			"spamCheck": {
+				"count": 1,
+				"id": "120806137816678402"
+			}
+		}
+	},
+	"284649841059954689": {
+		"name": "aaaaaa",
+		"id": "284649841059954689",
+		"score_time": 2,
+		"admin": "admin",
+		"member": "member",
+		"xpScale": 250,
+		"console": true,
+		"debug": [],
+		"freq": 30,
+		"money": {
+			"onChannel": "284649841059954689",
+			"onScreen": false,
+			"lastMsg": 1491612199178,
+			"spamCheck": {
+				"count": 0,
+				"userid": "",
+				"id": "190086754856992768"
+			}
+		}
+	},
+	"299945080297488384": {
+		"name": "Tribute",
+		"id": "299945080297488384",
+		"score_time": 2,
+		"admin": "admin",
+		"member": "Peasant",
+		"xpScale": 250,
+		"console": true,
+		"debug": [],
+		"freq": 30,
+		"money": {
+			"onChannel": "299945080297488384",
+			"onScreen": true,
+			"lastMsg": 1492007444379,
+			"spamCheck": {
+				"count": 0,
+				"userid": "",
+				"id": "242805166858829824"
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "name":"loadCommands",
+    "path":"./loadCommands.js"
+  },
+  {
+    "name":"loadAdminCommands",
+    "path":"./loadAdminCommands.js"
+  }
+]

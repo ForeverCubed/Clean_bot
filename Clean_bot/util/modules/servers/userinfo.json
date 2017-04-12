@@ -1,0 +1,280 @@
+{
+	"props": [
+		"username",
+		"discriminator",
+		"id",
+		"exp",
+		"level",
+		"money"
+	],
+	"258426944230653952": {
+		"120806137816678402": {
+			"username": "ForeverCubed",
+			"discriminator": "0697",
+			"id": "120806137816678402",
+			"exp": 661,
+			"level": 3,
+			"money": 21,
+			"totalexp": 1411,
+			"lastmsg": 1492005973580
+		},
+		"212398754538455042": {
+			"username": "LamazeP",
+			"discriminator": "2321",
+			"id": "212398754538455042",
+			"exp": 38,
+			"level": 1,
+			"money": 9,
+			"totalexp": 38,
+			"lastmsg": 1491414245085
+		},
+		"258426554739064833": {
+			"username": "Kanye West",
+			"discriminator": "3968",
+			"id": "258426554739064833",
+			"exp": 243,
+			"level": 4,
+			"money": 2,
+			"totalexp": 1743,
+			"lastmsg": 1491883328224
+		}
+	},
+	"263557021893132289": {
+		"120806137816678402": {
+			"username": "ForeverCubed",
+			"discriminator": "0697",
+			"id": "120806137816678402",
+			"exp": 469,
+			"level": 2,
+			"money": 16,
+			"totalexp": 719,
+			"lastmsg": 1492006025422
+		},
+		"260956035773235200": {
+			"username": "Murta",
+			"discriminator": "9078",
+			"id": "260956035773235200",
+			"exp": 184,
+			"level": 1,
+			"money": 0,
+			"totalexp": 184,
+			"lastmsg": 1491954241541
+		},
+		"239422650139541506": {
+			"username": "gogogagdetorgasm",
+			"discriminator": "2286",
+			"id": "239422650139541506",
+			"exp": 253,
+			"level": 2,
+			"money": 0,
+			"totalexp": 503,
+			"lastmsg": 1492001704665
+		},
+		"158532073198583808": {
+			"username": "由乃",
+			"discriminator": "5107",
+			"id": "158532073198583808",
+			"exp": 30,
+			"level": 1,
+			"money": 4,
+			"totalexp": 30,
+			"lastmsg": 1491438644520
+		},
+		"241014852003430400": {
+			"username": "Toasty",
+			"discriminator": "4989",
+			"id": "241014852003430400",
+			"exp": 12,
+			"level": 1,
+			"money": 0,
+			"totalexp": 12,
+			"lastmsg": 1491395761967
+		},
+		"190937248886292489": {
+			"username": "k a y u t a ☹",
+			"discriminator": "0521",
+			"id": "190937248886292489",
+			"exp": 127,
+			"level": 2,
+			"money": 12,
+			"totalexp": 377,
+			"lastmsg": 1492005968258
+		},
+		"111911375269330944": {
+			"username": "griz 💓",
+			"discriminator": "8168",
+			"id": "111911375269330944",
+			"exp": 50,
+			"level": 1,
+			"money": 0,
+			"totalexp": 50,
+			"lastmsg": 1491511433137
+		},
+		"171409277091708928": {
+			"username": "Night Thief",
+			"discriminator": "6999",
+			"id": "171409277091708928",
+			"exp": 214,
+			"level": 1,
+			"money": 0,
+			"totalexp": 214,
+			"lastmsg": 1491972032206
+		}
+	},
+	"[object Object]": {
+		"120806137816678402": {
+			"username": "ForeverCubed",
+			"discriminator": "0697",
+			"id": "120806137816678402",
+			"exp": 661,
+			"level": 3,
+			"money": 21,
+			"totalexp": 1411,
+			"lastmsg": 1492005973580
+		},
+		"212398754538455042": {
+			"username": "LamazeP",
+			"discriminator": "2321",
+			"id": "212398754538455042",
+			"exp": 38,
+			"level": 1,
+			"money": 9,
+			"totalexp": 38,
+			"lastmsg": 1491414245085
+		},
+		"258426554739064833": {
+			"username": "Kanye West",
+			"discriminator": "3968",
+			"id": "258426554739064833",
+			"exp": 243,
+			"level": 4,
+			"money": 2,
+			"totalexp": 1743,
+			"lastmsg": 1491883328224
+		}
+	},
+	"284649841059954689": {
+		"171409277091708928": {
+			"username": "Night Thief",
+			"discriminator": "6999",
+			"id": "171409277091708928",
+			"exp": 57,
+			"level": 1,
+			"money": 0,
+			"totalexp": 57,
+			"lastmsg": 1491603340555
+		},
+		"190086754856992768": {
+			"username": "Shikatsuki",
+			"discriminator": "3054",
+			"id": "190086754856992768",
+			"exp": 12,
+			"level": 1,
+			"money": 0,
+			"totalexp": 12,
+			"lastmsg": 1491612199178
+		}
+	},
+	"299945080297488384": {
+		"242805166858829824": {
+			"username": "Trolldad1950",
+			"discriminator": "7565",
+			"id": "242805166858829824",
+			"exp": 75,
+			"level": 2,
+			"money": 0,
+			"totalexp": 325,
+			"lastmsg": 1492007444379
+		},
+		"232550129180082176": {
+			"username": "kiwi",
+			"discriminator": "1558",
+			"id": "232550129180082176",
+			"exp": 235,
+			"level": 5,
+			"money": 100,
+			"totalexp": 2735,
+			"lastmsg": 1491937620814
+		},
+		"212398754538455042": {
+			"username": "Tsukuro",
+			"discriminator": "2321",
+			"id": "212398754538455042",
+			"exp": 68,
+			"level": 1,
+			"money": 3,
+			"totalexp": 68,
+			"lastmsg": 1491789838957
+		},
+		"120806137816678402": {
+			"username": "ForeverCubed",
+			"discriminator": "0697",
+			"id": "120806137816678402",
+			"exp": 147,
+			"level": 3,
+			"money": 29,
+			"totalexp": 897,
+			"lastmsg": 1491966954490
+		},
+		"182978704769679360": {
+			"username": "Tsumura",
+			"discriminator": "5844",
+			"id": "182978704769679360",
+			"exp": 137,
+			"level": 3,
+			"money": 2,
+			"totalexp": 887,
+			"lastmsg": 1491861022179
+		},
+		"241941136074080257": {
+			"username": "Vosseal",
+			"discriminator": "8781",
+			"id": "241941136074080257",
+			"exp": 144,
+			"level": 1,
+			"money": 0,
+			"totalexp": 144,
+			"lastmsg": 1491843121559
+		},
+		"263094489625788416": {
+			"username": "Shane",
+			"discriminator": "0989",
+			"id": "263094489625788416",
+			"exp": 178,
+			"level": 1,
+			"money": 0,
+			"totalexp": 178,
+			"lastmsg": 1491838110385
+		},
+		"258426554739064833": {
+			"username": "Kanye West",
+			"discriminator": "3968",
+			"id": "258426554739064833",
+			"exp": 30,
+			"level": 1,
+			"money": 0,
+			"totalexp": 30,
+			"lastmsg": 1491863001139
+		},
+		"184405311681986560": {
+			"username": "FredBoat♪♪",
+			"discriminator": "7284",
+			"id": "184405311681986560",
+			"exp": 40,
+			"level": 1,
+			"money": 0,
+			"totalexp": 40,
+			"lastmsg": 1491865957950
+		}
+	},
+	"120806137816678402": {
+		"username": "ForeverCubed",
+		"discriminator": "0697",
+		"id": "120806137816678402",
+		"exp": 81,
+		"level": 2,
+		"money": 21,
+		"totalexp": 331,
+		"lastmsg": 1491849889461
+	}
+}

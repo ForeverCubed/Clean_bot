@@ -1,0 +1,67 @@
+{
+  "commands":[
+    {  "name":"ping",
+      "call":["!ping"],
+      "path":"./commands/ping.js"
+    },
+    { "name":"send",
+      "call":["!send"],
+      "path":"./commands/send.js"
+    },
+    { "name":"flip",
+      "call":["!flip"],
+      "path":"./commands/gambling/flip.js"
+    },
+    { "name":"roll",
+      "call":["!roll"],
+      "path":"./commands/gambling/roll.js"
+    },
+    { "name":"slots",
+      "call":["!slots"],
+      "path":"./commands/gambling/slots.js"
+    },
+    { "name":"showMoney",
+      "call":["$$$","£££"],
+      "path":"./commands/showMoney.js"
+    },
+    { "name":"grab",
+      "call":["!grab"],
+      "path":"./commands/grab.js"
+    },
+    { "name":"addquote",
+      "call":["..","!addquote"],
+      "path":"./commands/addQ.js"
+    },
+    { "name":"delquote",
+      "call":["!delquote"],
+      "path":"./commands/delQ.js"
+    },
+    { "name":"clr",
+      "call":["!clr"],
+      "path":"./commands/clr.js"
+    },
+    { "name":"level",
+      "call":"!level",
+      "call":["!level","!exp"],
+      "path":"./commands/level.js"
+    }
+  ],
+  "admin":[
+    { "name":"editdebug",
+      "call":"!editdebug",
+      "path":"./admin/editDebug.js"
+    },
+    { "name":"clearconsole",
+      "call":"!clearconsole",
+      "path":"./admin/clearconsole.js"
+    },
+    { "name":"edituser",
+      "call":"!edit",
+      "path":"./admin/edituser.js"
+    },
+    { "name":"editserver",
+      "call":"!settings",
+      "path":"./admin/editserver.js"
+    }
+  ]
+}
