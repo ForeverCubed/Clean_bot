@@ -1,0 +1,145 @@
+
+{
+	"files":{
+		"reqSettings":"./settings-required.json",
+		"users":"./JSON files/servers/userinfo.json",
+		"servers":"./JSON files/servers/serverSettings.json",
+		"quotes":"./JSON files/servers/quotes.json"
+	},
+	"commands":[
+		{ "name":"leaderboard",
+		  "call":["!lb","!leaderboard"],
+		  "path":"./Commands/commands/leaderboard.js",
+		  "fileio":null
+		},
+		{ "name":"showRank",
+		  "call":["!rank"],
+		  "path":"./Commands/commands/rank.js",
+		  "fileio":null
+		},
+		{ "name":"showCommands",
+		  "call":["!commands"],
+		  "path":"./Commands/commands/printCommands.js",
+		  "fileio":null
+		},
+		{ "name":"ping",
+		  "call":["!ping"],
+		  "path":"./Commands/commands/ping.js",
+		  "fileio":null
+		},
+		{ "name":"flip",
+		  "call":["!flip"],
+		  "path":"./Commands/commands/gambling/flip.js",
+		  "fileio":"users"
+		},
+		{ "name":"roll",
+		  "call":["!roll"],
+		  "path":"./Commands/commands/gambling/roll.js",
+		  "fileio":"users"
+		},
+		{ "name":"slots",
+		  "call":["!slots"],
+		  "path":"./Commands/commands/gambling/slots.js",
+		  "fileio":"users"
+		},
+		{ "name":"send",
+		  "call":["!send"],
+		  "path":"./Commands/commands/send.js",
+		  "fileio":"users"
+		},
+		{ "name":"showMoney",
+		  "call":["!money","!cash","!currency","!funds","$$$","£££"],
+		  "path":"./Commands/commands/showMoney.js",
+		  "fileio":null
+		},
+		{ "name":"grab",
+		  "call":["!grab"],
+		  "path":"./Commands/commands/grab.js",
+		  "fileio":null
+		},
+		{ "name":"addquote",
+		  "call":["!addquote",".."],
+		  "path":"./Commands/commands/addQ.js",
+		  "fileio":"quotes"
+		},
+		{ "name":"delquote",
+		  "call":["!delquote"],
+		  "path":"./Commands/commands/delQ.js",
+		  "fileio":"quotes"
+		},
+		{ "name":"clr",
+		  "call":["!clr"],
+		  "path":"./Commands/commands/clr.js",
+		  "fileio":null
+		},
+		{ "name":"level",
+		  "call":["!level","!exp"],
+		  "path":"./Commands/commands/level.js",
+		  "fileio":null
+		}
+	],
+	"admincommands":[
+		{ "name":"editdebug",
+		  "call":["!editdebug"],
+		  "path":"./Commands/admin/editDebug.js",
+		  "fileio":"reqSettings"
+		},
+		{ "name":"clearconsole",
+		  "call":["!clearconsole"],
+		  "path":"./Commands/admin/clearconsole.js",
+		  "fileio":null
+		},
+		{ "name":"edituser",
+		  "call":["!edituser"],
+		  "path":"./Commands/admin/edituser.js",
+		  "fileio":"users"
+		},
+		{ "name":"editserver",
+		  "call":["!settings"],
+		  "path":"./Commands/admin/editserver.js",
+		  "fileio":"servers"
+		}
+	],
+	"util":[
+		{	"name":"mentions",
+			"path":"./util/modules/Utility Functions/mentions_check.js",
+			"returns":"user"
+		},
+		{ 	"name":"updateRank",
+			"path":"./util/modules/servers/user_rank.js",
+			"returns":"users"
+		},
+		{	"name":"cmdCheck",
+			"path":"./util/modules/commandSearch.js",
+			"returns":"boolean"
+		},
+		{	"name":"newServer",
+			"path":"./util/modules/servers/newServer.js",
+			"returns":"boolean"
+		},
+		{	"name":"showinconsole",
+			"path":"./util/modules/console/showinconsole.js",
+			"returns":"void"
+		},
+		{	"name":"check",
+			"path":"./util/modules/cashsys/check.js",
+			"returns":"void"
+		},
+		{	"name":"findPower",
+			"path":"./util/modules/findPower.js",
+			"returns":"int"
+		},
+		{	"name":"updateUserInfo",
+			"path":"./util/modules/servers/updateUserInfo.js",
+			"returns":"boolean"
+		},
+		{	"name":"msgFormalities",
+			"path":"./util/modules/msgFormalities.js",
+			"returns":"array"
+		},
+		{	"name":"isaquote",
+			"path":"./util/modules/isaquote.js",
+			"returns":"boolean"
+		}
+	]
+}

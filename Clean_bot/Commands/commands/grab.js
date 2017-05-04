@@ -1,15 +1,15 @@
 const fs = require("fs");
-module.exports = function(omsg, args, powerlevel, server){
-  var allusers = JSON.parse(fs.readFileSync('./util/modules/servers/userinfo.json', 'utf8'));
+module.exports = function(omsg, args, powerlevel, server, allusers, globalDebug){
+  //var allusers = JSON.parse(fs.readFileSync('./util/modules/servers/userinfo.json', 'utf8'));
   var servers = JSON.parse(fs.readFileSync('./util/modules/servers/serverSettings.json', 'utf8'));
   var users = allusers[omsg.guild.id];
   if(server.freq <= 0){
     omsg.channel.sendMessage("Noodles are disabled for this server. Sorry!");
-    return;
+    return undefined;
   }
   if(!server.money.onScreen || omsg.channel.id !== server.money.onChannel){
     omsg.reply("No lolis in sight, sir!");
-    return;
+    return undefined;
   }
   server.money.onScreen = false;
   var msgs = [];
@@ -32,4 +32,5 @@ module.exports = function(omsg, args, powerlevel, server){
   fs.writeFile('./util/modules/servers/userinfo.json', JSON.stringify(allusers, null, "\t"));
   servers[omsg.guild.id] = server;
   fs.writeFile('./util/modules/servers/serverSettings.json', JSON.stringify(servers, null, "\t"));
+  return undefined;
 }

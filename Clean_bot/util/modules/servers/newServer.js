@@ -1,9 +1,7 @@
-const fs = require("fs");
-var serverSettings = JSON.parse(fs.readFileSync('./util/modules/servers/serverSettings.json', 'utf8'));
-var quotes = JSON.parse(fs.readFileSync('./util/modules/servers/quotes.json', 'utf8'));
-
-module.exports = function(server, globalDebug){
-  quotes[server.id] = {"help":{
+module.exports = function(server, globalDebug, serverSettings, quotes){
+  if(globalDebug.includes("server")) console.log("    Creating new server "+msg.guild.name);
+  quotes[server.id] = {
+    "help":{
     "quote":"help",
     "creatorid":"120806137816678402",
     "creatorname":"ForeverCubed",
@@ -29,6 +27,7 @@ module.exports = function(server, globalDebug){
       }
     }
   }
-  fs.writeFile('./util/modules/servers/serverSettings.json', JSON.stringify(serverSettings, null, "\t"));
-  fs.writeFile('./util/modules/servers/quotes.json', JSON.stringify(quotes, null, "\t"));
+  return {"servers":serverSettings, "quotes":quotes};
+  //fs.writeFile('./util/modules/servers/serverSettings.json', JSON.stringify(serverSettings, null, "\t"));
+  //fs.writeFile('./util/modules/servers/quotes.json', JSON.stringify(quotes, null, "\t"));
 }

@@ -1,30 +1,18 @@
 module.exports = function(omsg, args, powerlevel, server, users){
   try{
     var mentions = omsg.mentions.users.array();
-    if(mentions[0]) {
-      mentions = mentions[0];
-    } else if(users[server.id][args[1]]){
-      mentions = users[args[1]];
-    }else{
-      mentions = undefined;
-    }
-    if(server.debug.includes("clr.js")){
-      console.log("     mentions: ")
-      console.log("     "+mentions+"\n")
-    }
+    if(mentions[0]) mentions = mentions[0];
+    else if(users[server.id][args[1]]) mentions = users[args[1]];
+    else mentions = undefined;
     // done setting mentions.
     var checkAgainst = omsg.author.id; // sets checkAgainst to the ID chosen
     var print = "";
     var toDel = clrCheck(omsg, args, powerlevel, print, server, users);
-    if(server.debug){
-      console.log("     toDel "+toDel)
-      console.log("     powerlevel "+powerlevel)
-    }
-    if(!toDel) return;
+    if(!toDel) return undefined;
     if(!mentions && powerlevel >= 2){
       omsg.channel.fetchMessages({limit: toDel})
         .then(messages => omsg.channel.bulkDelete(messages));
-        return;
+        return undefined;
     }
     if(powerlevel >= 2) checkAgainst = mentions.id
     var delmsgs = [];
@@ -37,28 +25,22 @@ module.exports = function(omsg, args, powerlevel, server, users){
           }
         }
         omsg.channel.bulkDelete(delmsgs); // finally deletes all selected msgs
-        console.log("     Cleared "+delmsgs.length+" messages!")
       });
     omsg.delete(3000) // lastly deletes !clr
+    return undefined;
   }catch(err){
-    if(server.debug) console.log("     Uh oh! clr.js made a bad. \n"+err)
+    console.log("Error in clr.js. \n"+err)
   }
 }
 
 function clrCheck(omsg, args, powerlevel, print, server, users){
       // this is assigned to toDel, line 10.
       var mentions = omsg.mentions.users.array();
-      if(mentions[0]) {
-        mentions = mentions[0];
-      } else if(users[server.id][args[1]]){
-        mentions = users[args[1]];
-      }else{
-        mentions = undefined;
-      }
+      if(mentions[0]) mentions = mentions[0];
+      else if(users[server.id][args[1]]) mentions = users[args[1]];
+      else mentions = undefined;
       // done setting mentions.
       try{ // just dumb stuff for debugging.
-        console.log("     "+mentions.id)
-        console.log("     "+mentions.username)
       }catch(err){}
       if(powerlevel < 1){
         print += "Only members can use !clr"

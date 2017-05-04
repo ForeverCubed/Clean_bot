@@ -4,11 +4,11 @@ module.exports = function(omsg, args, powerlevel, server){
   var quotes = allquotes[omsg.guild.id];
   if(args[1] == "quotes"){
     omsg.channel.sendMessage("Pls no, that one is reserved.");
-    return;
+    return undefined;
   }
   if(!args[2] || !args[1] || args[1] == ""){
     omsg.channel.sendMessage("Please specify a quotename and quote.");
-    return;
+    return undefined;
   }
   if(!quotes[args[1]]){
     var newQuote = {
@@ -22,6 +22,6 @@ module.exports = function(omsg, args, powerlevel, server){
   pushQuote = omsg.content.substring(args[0].length + args[1].length + 2);
   quotes[args[1]].content.push(pushQuote);
   allquotes[omsg.guild.id] = quotes;
-  fs.writeFile('./util/modules/servers/quotes.json', JSON.stringify(allquotes, null, "\t"));
   omsg.reply("Quote created!");
+  return allquotes;
 }

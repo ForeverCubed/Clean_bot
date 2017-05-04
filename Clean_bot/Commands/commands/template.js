@@ -1,2 +1,2 @@
-module.exports = function(omsg, args, powerlevel, server, allusers){
+module.exports = function(omsg, args, powerlevel, server, allusers, globalDebug){
 }

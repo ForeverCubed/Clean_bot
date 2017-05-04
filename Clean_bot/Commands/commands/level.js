@@ -1,39 +1,42 @@
 const fs = require("fs");
-module.exports = function(omsg, args, powerlevel, server){
-  var users = JSON.parse(fs.readFileSync('./util/modules/servers/userinfo.json', 'utf8'));
-  var users = users[omsg.guild.id];
-  var mentions = omsg.mentions.users.array();
-  var user = omsg.author.id;
-  if(mentions[0]){
-    if(!users[mentions[0].id]){
-      omsg.reply("User does not have a profile.");
-      return;
-    }
-    var user = mentions[0].id;
+module.exports = function(omsg, args, powerlevel, server, allusers, globalDebug){
+  var users = allusers[server.id];
+  // setting the set of users to the current server's users.
+  var mentions = check(omsg, args[1], users, server);
+  if(!mentions){
+    omsg.reply("User does not have a profile.");
+    return undefined;
   }
-  var tonextlvl = users[user].level*server.xpScale;
-  var perc = ((users[user].exp/tonextlvl)*100);
-  perc = Math.floor(perc)/10;
-  var print = "**"
-  print += users[user].level
-  var a = false
-  for(var xpbar = 0; xpbar < 10; xpbar++){
-    if(xpbar < perc){
-      //print += "═"
-      print += "▓"
-    } else //if(!a){
-      //print += "╬"
-      print += "░"
-      //a = true;
-    //}
-    //print += "═"
-  }
-  print += (users[user].level+1)
-  //print += " "+(users[user].level + 1)
-  var expToLevel = users[user].exp/(users[user].level*server.xpScale)
+  var user = users[mentions.id];
+  var print = "**"+mentions.username+"\n";
+  print += xpBar(user.level, user.exp, user.level*server.xpScale);
+  var expToLevel = user.exp/(user.level*server.xpScale)
   expToLevel = Math.floor(expToLevel*1000)
   expToLevel /= 10;
-  print += "\n"+ users[user].exp+"/"+users[user].level*server.xpScale+"exp**"
+  print += "\n"+ user.exp+"/"+user.level*server.xpScale+"exp**"
   omsg.channel.sendMessage(print);
-  return;
+  return undefined;
+}
+
+function check(omsg, arg, users, server){
+  var mentions = omsg.mentions.users.array();
+  if(mentions[0]) mentions = mentions[0];
+  else if(!arg) return omsg.author;
+  else if(users[arg]) mentions = users[arg];
+  else mentions = undefined;
+  return mentions;
+}
+
+function xpBar(level, exp, expToNext){
+  var Bars = 10;
+  var print = ""+level;
+  // perc is a value 0 - 10 giving the percentage to next level
+  var perc = Math.floor(exp/expToNext*(Bars*10))/10;
+  // now just draw in the exp bar
+  for(var bar = 0; bar < Bars; bar++){
+    if(bar < perc) print += "▓"
+    else print += "░"
+  }
+  print += level+1;
+  return print;
 }

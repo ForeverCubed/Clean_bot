@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports = function(omsg, args, powerlevel, servers){
-  var noodles = JSON.parse(fs.readFileSync('./util/modules/cashsys/noodles.json', 'utf8'));
+  var noodles = JSON.parse(fs.readFileSync('./JSON files/cashsys/noodles.json', 'utf8'));
   var server = servers[omsg.guild.id];
   // returns if the server disabled money.
   if(server.money.freq <= 0) return;
@@ -19,7 +19,7 @@ module.exports = function(omsg, args, powerlevel, servers){
   if(omsg.createdTimestamp < secDelay+server.money.lastMsg || server.money.spamCheck.count >= spamFilter){
     server.money.lastMsg = omsg.createdTimestamp;
     servers[omsg.guild.id] = server;
-    fs.writeFile('./util/modules/servers/serverSettings.json', JSON.stringify(servers, null, "\t"));
+    fs.writeFile('./JSON files/servers/serverSettings.json', JSON.stringify(servers, null, "\t"));
     return;
   }
   // all spam is weeded out above.
@@ -35,5 +35,5 @@ module.exports = function(omsg, args, powerlevel, servers){
   }
   server.money.lastMsg = omsg.createdTimestamp;
   servers[omsg.guild.id] = server;
-  fs.writeFile('./util/modules/servers/serverSettings.json', JSON.stringify(servers, null, "\t"));
+  fs.writeFile('./JSON files/servers/serverSettings.json', JSON.stringify(servers, null, "\t"));
 }

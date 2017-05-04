@@ -24,10 +24,10 @@
 		"money": {
 			"onChannel": "263557021893132289",
 			"onScreen": false,
-			"lastMsg": 1492006025422,
+			"lastMsg": 1492877862480,
 			"spamCheck": {
 				"count": 0,
-				"id": "120806137816678402"
+				"id": "260956035773235200"
 			}
 		}
 	},
@@ -44,9 +44,9 @@
 		"money": {
 			"onChannel": "258426944230653952",
 			"onScreen": false,
-			"lastMsg": 1492005973580,
+			"lastMsg": 1492430531041,
 			"spamCheck": {
-				"count": 1,
+				"count": 0,
 				"id": "120806137816678402"
 			}
 		}
@@ -64,11 +64,11 @@
 		"money": {
 			"onChannel": "284649841059954689",
 			"onScreen": false,
-			"lastMsg": 1491612199178,
+			"lastMsg": 1492284603986,
 			"spamCheck": {
-				"count": 0,
+				"count": 1,
 				"userid": "",
-				"id": "190086754856992768"
+				"id": "171409277091708928"
 			}
 		}
 	},
@@ -83,13 +83,13 @@
 		"debug": [],
 		"freq": 30,
 		"money": {
-			"onChannel": "299945080297488384",
-			"onScreen": true,
-			"lastMsg": 1492007444379,
+			"onChannel": "301050388919091201",
+			"onScreen": false,
+			"lastMsg": 1493313563850,
 			"spamCheck": {
-				"count": 0,
+				"count": 1,
 				"userid": "",
-				"id": "242805166858829824"
+				"id": "120806137816678402"
 			}
 		}
 	}
